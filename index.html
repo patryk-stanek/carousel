@@ -2,14 +2,65 @@
 <html>
     <head>
 
-        <link rel="stylesheet" href="vendor/flickity.css">
+        <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
         <link rel="stylesheet" href="vendor/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <title>CAROUSEL</title>
     </head>
     <body>
 
-        <script src="vendor/flickity.pkgd.js"></script>
+        <div class="main-carousel">
+            <div class="carousel-cell" id="cell-1">
+                <div class="container" style="background-image: url(../images/1.jpg);">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
+                </div>
+            </div>
+            <div class="carousel-cell" id="cell-2">
+                <div class="container" style="background-image: url(../images/2.jpg);">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
+                </div>
+            </div>
+            <div class="carousel-cell" id="cell-3">
+                <div class="container" style="background-image: url(../images/3.jpg);">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
+                </div>
+            </div>
+            <div class="carousel-cell" id="cell-4">
+                <div class="container" style="background-image: url(../images/4.jpg);">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
+                </div>
+            </div>
+            <div class="carousel-cell" id="cell-5">
+                <div class="container" style="background-image: url(../images/5.jpg);">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
+                </div>
+            </div>
+            <div class="carousel-cell" id="cell-6">
+                <div class="container" style="background-image: url(../images/6.jpg);">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
+                </div>
+            </div>
+            <div class="carousel-cell" id="cell-7">
+                <div class="container" style="background-image: url(../images/7.jpg);">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar"></div>
+        <div class="links">
+            <a href="#cell-1">Cell 1</a>
+            <a href="#cell-2">Cell 2</a>
+            <a href="#cell-3">Cell 3</a>
+            <a href="#cell-4">Cell 4</a>
+            <a href="#cell-5">Cell 5</a>
+            <a href="#cell-6">Cell 6</a>
+            <a href="#cell-7">Cell 7</a>
+        </div>
+        <button id="button">restart</button>
+
+
+        <script src="vendor/flickity.pkgd.min.js"></script>
+        <script src="vendor/hash.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

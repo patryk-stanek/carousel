@@ -1,0 +1,63 @@
+body {
+  position: relative;
+}
+
+.main-carousel {
+  height: 50%;
+  min-height: 250px;
+}
+
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  background-size: cover;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+span {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.links * {
+  margin: 5px;
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
+/*# sourceMappingURL=style.css.map */

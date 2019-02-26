@@ -1,0 +1,58 @@
+body {
+    position: relative;
+}
+
+.main-carousel {
+    height: 50%;
+    min-height: 250px;
+}
+
+.carousel-cell {
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    background-size: cover;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+span {
+    background-color: rgba(black, .5);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+
+    & * {
+        margin: 5px;
+    }
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background: #333;
+  }
