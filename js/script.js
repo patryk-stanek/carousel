@@ -1,3 +1,18 @@
+'use strict';
+
+(function(){
+
+  var template = document.getElementById('template-container').innerHTML;
+  var main = document.getElementById('main');
+  Mustache.parse(template);
+  var text = '';
+  for (var i=0; i<data.length; i++) {
+    text += Mustache.render(template, data[i]);
+  };
+  main.insertAdjacentHTML('beforeend', text);
+
+})();
+
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options

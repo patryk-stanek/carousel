@@ -9,42 +9,8 @@
     </head>
     <body>
 
-        <div class="main-carousel">
-            <div class="carousel-cell" id="cell-1">
-                <div class="container" style="background-image: url(../images/1.jpg);">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
-                </div>
-            </div>
-            <div class="carousel-cell" id="cell-2">
-                <div class="container" style="background-image: url(../images/2.jpg);">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
-                </div>
-            </div>
-            <div class="carousel-cell" id="cell-3">
-                <div class="container" style="background-image: url(../images/3.jpg);">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
-                </div>
-            </div>
-            <div class="carousel-cell" id="cell-4">
-                <div class="container" style="background-image: url(../images/4.jpg);">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
-                </div>
-            </div>
-            <div class="carousel-cell" id="cell-5">
-                <div class="container" style="background-image: url(../images/5.jpg);">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
-                </div>
-            </div>
-            <div class="carousel-cell" id="cell-6">
-                <div class="container" style="background-image: url(../images/6.jpg);">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
-                </div>
-            </div>
-            <div class="carousel-cell" id="cell-7">
-                <div class="container" style="background-image: url(../images/7.jpg);">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero non maiores perspiciatis quasi inventore officiis esse nihil eius recusandae possimus accusantium laborum totam ullam, ipsam eaque. Sint, tempore magnam!</span>
-                </div>
-            </div>
+        <div class="main-carousel" id="main">
+
         </div>
         <div class="progress-bar"></div>
         <div class="links">
@@ -61,6 +27,61 @@
 
         <script src="vendor/flickity.pkgd.min.js"></script>
         <script src="vendor/hash.js"></script>
+        <script src="vendor/mustache.js"></script>
+        <script id="template-container" type="x-tmpl-mustache">
+            <div class="carousel-cell" id="{{id}}">
+                <div class="container" style="background-image: url({{image}});">
+                    <h3>{{title}}</h1>
+                    {{{description}}}
+                </div>
+            </div>
+        </script>
+        <script>
+            var data = [
+                {
+                    id: 'cell-1',
+                    image: '../images/1.jpg',
+                    title: 'title1',
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                },
+                {
+                    id: 'cell-2',
+                    image: '../images/2.jpg',
+                    title: 'title2',
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                },
+                {
+                    id: 'cell-3',
+                    image: '../images/3.jpg',
+                    title: 'title3',
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                },
+                {
+                    id: 'cell-4',
+                    image: '../images/4.jpg',
+                    title: 'title4',
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                },
+                {
+                    id: 'cell-5',
+                    image: '../images/5.jpg',
+                    title: 'title5',
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                },
+                {
+                    id: 'cell-6',
+                    image: '../images/6.jpg',
+                    title: 'title6',
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                },
+                {
+                    id: 'cell-7',
+                    image: '../images/7.jpg',
+                    title: 'title7',
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                }
+            ];
+        </script>
         <script src="js/script.js"></script>
     </body>
 </html>

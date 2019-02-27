@@ -20,11 +20,6 @@ body {
   display: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 .container {
   max-width: 1200px;
   background-size: cover;
@@ -34,8 +29,9 @@ img {
   text-transform: uppercase;
 }
 
-span {
+h3, p {
   background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .links {
