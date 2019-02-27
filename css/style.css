@@ -27,6 +27,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-transform: uppercase;
+  width: 100%;
+}
+
+img {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 h3, p {
@@ -55,5 +62,14 @@ button {
   height: 20px;
   width: 0;
   background: #333;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  max-width: 1200px;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

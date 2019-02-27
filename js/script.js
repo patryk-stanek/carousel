@@ -11,7 +11,15 @@
   };
   main.insertAdjacentHTML('beforeend', text);
 
-})();
+window.initMap = function() {
+
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: data[0].cords});
+
+  for (var i=0; i<data.length; i++){
+    var marker = new google.maps.Marker({position: data[i].cords, map: map});
+  }
+}
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
@@ -38,3 +46,5 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
+
+})();

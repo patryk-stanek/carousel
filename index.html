@@ -22,6 +22,10 @@
             <a href="#cell-6">Cell 6</a>
             <a href="#cell-7">Cell 7</a>
         </div>
+
+        <p id="info"></p>
+        
+        <div id="map"></div>
         <button id="button">restart</button>
 
 
@@ -42,46 +46,54 @@
                     id: 'cell-1',
                     image: '../images/1.jpg',
                     title: 'title1',
-                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                    cords: {lat: -25.363, lng: 131.044}
                 },
                 {
                     id: 'cell-2',
                     image: '../images/2.jpg',
                     title: 'title2',
-                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                    cords: {lat: -15.363, lng: 131.044}
                 },
                 {
                     id: 'cell-3',
                     image: '../images/3.jpg',
                     title: 'title3',
-                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                    cords: {lat: -35.363, lng: 131.044}
                 },
                 {
                     id: 'cell-4',
                     image: '../images/4.jpg',
                     title: 'title4',
-                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                    cords: {lat: -45.363, lng: 131.044}
                 },
                 {
                     id: 'cell-5',
                     image: '../images/5.jpg',
                     title: 'title5',
-                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                    cords: {lat: -25.363, lng: 121.044}
                 },
                 {
                     id: 'cell-6',
                     image: '../images/6.jpg',
                     title: 'title6',
-                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                    cords: {lat: -25.363, lng: 111.044}
                 },
                 {
                     id: 'cell-7',
                     image: '../images/7.jpg',
                     title: 'title7',
-                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                    description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                    cords: {lat: -25.363, lng: 101.044}
                 }
             ];
         </script>
         <script src="js/script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE1meKsRH5IBIXsXUw9YH5ks1B63NYg7c&callback=initMap"></script>
     </body>
 </html>
