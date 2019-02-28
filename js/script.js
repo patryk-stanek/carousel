@@ -2,6 +2,8 @@
 
 (function(){
 
+  var btn = document.getElementById('button');
+
   var template = document.getElementById('template-container').innerHTML;
   var main = document.getElementById('main');
   Mustache.parse(template);
@@ -11,15 +13,6 @@
   };
   main.insertAdjacentHTML('beforeend', text);
 
-window.initMap = function() {
-
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: data[0].cords});
-
-  for (var i=0; i<data.length; i++){
-    var marker = new google.maps.Marker({position: data[i].cords, map: map});
-  }
-}
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
@@ -29,14 +22,25 @@ var flkty = new Flickity( elem, {
   hash: true
 });
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
-//   hash: true,
-});
+window.initMap = function() {
 
-var btn = document.getElementById('button');
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: data[0].cords});
+
+  for (var i=0; i<data.length; i++){
+    var marker = new google.maps.Marker({position: data[i].cords, map: map});
+    
+    var addListener = function(i) {
+      google.maps.event.addListener(marker, 'click', function(){flkty.select(i, true)});
+    }
+
+    addListener(i);
+  }
+
+  flkty.on( 'change', function( index ) {
+    map.panTo(data[index].cords);
+  });
+}
 
 btn.addEventListener('click', function(){flkty.select(0, true)});
 

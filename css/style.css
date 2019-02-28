@@ -5,6 +5,9 @@ body {
 .main-carousel {
   height: 50%;
   min-height: 250px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .carousel-cell {
@@ -21,13 +24,15 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  min-height: 250px;
+  height: 50vh;
+  width: 100%;
   background-size: cover;
+  background-position: center;
   padding: 50px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-transform: uppercase;
-  width: 100%;
 }
 
 img {
@@ -65,7 +70,8 @@ button {
 }
 
 #map {
-  height: 400px;
+  height: 50vh;
+  min-height: 250px;
   width: 100%;
   max-width: 1200px;
   display: -ms-flexbox;
