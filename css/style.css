@@ -1,23 +1,72 @@
-body { position: relative; }
+body {
+  position: relative;
+}
 
-.main-carousel { height: 50%; min-height: 250px; width: 100%; max-width: 1200px; margin: 0 auto; }
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
 
-.carousel-cell { width: 100%; margin-right: 10px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
+.flickity-page-dots {
+  display: none;
+}
 
-.flickity-page-dots { display: none; }
+.container {
+  min-height: 250px;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
 
-.container { min-height: 250px; height: 50vh; width: 100%; background-size: cover; background-position: center; padding: 50px; font-family: Arial, Helvetica, sans-serif; color: white; text-transform: uppercase; }
+img {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-img { margin: 0 auto; display: -ms-flexbox; display: flex; }
+h3, p {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
 
-h3, p { background-color: rgba(0, 0, 0, 0.5); text-align: center; }
+.links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
 
-.links { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
+.links * {
+  margin: 5px;
+}
 
-.links * { margin: 5px; }
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
-button { position: absolute; top: 0; right: 0; }
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
 
-.progress-bar { height: 20px; width: 0; background: #333; }
-
-#map { height: 50vh; min-height: 250px; width: 100%; max-width: 1200px; display: -ms-flexbox; display: flex; margin: 0 auto; }
+#map {
+  height: 50vh;
+  min-height: 250px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
